@@ -1,0 +1,34 @@
+/*
+HISTORY:
+* Javascript was invented by "Brendan Eich" in 1995.
+* Initial name of js is "Mocha" later it became "livescript".
+* It launched universally by ECMA in 1997.ECMA=European Computers Manufacturers Association.
+* ECMAscript is the official name of js.
+
+VERSIONS:
+ES1,ES2,ES3,ES4,ES5,ES6-standard version,ES4-never released.
+ES1-ES5=basic syntax,types,objects,control structures-array methods,object methods,json support.
+ES6=variables,functions,objects & classes,modules,promises etc.2015
+ES7=Exponent operator,array.prototype.includes().
+ES8=async/await
+ES9=rest/spread properties for objects,asynchronous iteration
+ES10=array prototype,object from entries
+ES11=bigint,nullish coalescing
+ES12=logical assignment operators,numeric separators
+ES13=class fields and private methods
+ES14=array find from last
+ES15=union,intersection,difference
+
+USE CASES:
+1.Authentication of forms
+2.Add to cart
+3.API's
+4.Synchronous and asynchronous (await)
+5.ES6
+
+IMPLEMENTATION:
+1.Inline JS-First priority,least preference-used in tag
+2.Internal JS-second priority-used in same page using script tag
+3.External JS-Least priority,First preference-used for multiple pages as need to write in a separate page and link using script tag
+
+*/ 
