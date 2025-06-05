@@ -1,23 +1,63 @@
-/*
+# Introduction to JavaScript
+
 HISTORY:
 * Javascript was invented by "Brendan Eich" in 1995.
-* Initial name of js is "Mocha" later it became "livescript".
+* Initial name of js is "Mocha" later it became "livescript", later it became "Javascript".
+* It was developed by Netscape Communications Corporation.
+* It was standardized by ECMA International as ECMAScript.
 * It launched universally by ECMA in 1997.ECMA=European Computers Manufacturers Association.
 * ECMAscript is the official name of js.
+* Javascript is a high level,interpreted,object oriented programming language.
+* It is a client side scripting language.
+* It is used to create dynamic and interactive web pages.
+* It is a weakly typed language.
+* It is a cross platform language.
+
 
 VERSIONS:
-ES1,ES2,ES3,ES4,ES5,ES6-standard version,ES4-never released.
+* ECMAScript 1 (1997)
+* ECMAScript 2 (1998)
+* ECMAScript 3 (1999)
+* ECMAScript 4 (2008) - never released
+* ECMAScript 5 (2009)
+* ECMAScript 6 (2015) - also known as ES2015
+* ECMAScript 7 (2016) - also known as ES2016
+* ECMAScript 8 (2017) - also known as ES2017
+* ECMAScript 9 (2018) - also known as ES2018
+* ECMAScript 10 (2019) - also known as ES2019
+* ECMAScript 11 (2020) - also known as ES2020
+* ECMAScript 12 (2021) - also known as ES2021
+* ECMAScript 13 (2022) - also known as ES2022
+* ECMAScript 14 (2023) - also known as ES2023
+* ECMAScript 15 (2024) - also known as ES2024
+* ECMAScript 16 (2025) - also known as ES2025
+
+ES1,ES2,ES3,ES4,ES5,ES6-standard version
 ES1-ES5=basic syntax,types,objects,control structures-array methods,object methods,json support.
 ES6=variables,functions,objects & classes,modules,promises etc.2015
-ES7=Exponent operator,array.prototype.includes().
-ES8=async/await
-ES9=rest/spread properties for objects,asynchronous iteration
+ES7= async/await,object spread operator,exponentiation operator etc.2016
+ES8= async/await,regExp,at method etc.2017
+ES9= async/await,regExp,at method etc.2018
 ES10=array prototype,object from entries
-ES11=bigint,nullish coalescing
-ES12=logical assignment operators,numeric separators
-ES13=class fields and private methods
-ES14=array find from last
-ES15=union,intersection,difference
+ES11=bigint,nullish coalescing operator,optional chaining operator
+ES12=logical assignment operators,numeric separators 
+ES13=class fields and private methods,top-level await
+ES14=array find from last ,regexp match all,regexp named groups
+ES15=union,intersection,difference ,includes,flatmap.
+
+
+FEATURES:
+1. Dynamic typing: Variables can hold any type of data. 
+2. First-class functions: Functions can be treated as values, passed as arguments, and returned from other functions.
+3. Object-oriented programming: Supports inheritance, polymorphism, and encapsulation.
+4. Event-driven programming: Responds to user interactions and events.
+5. Asynchronous programming: Allows for non-blocking, concurrent execution of tasks.
+6. Regular expressions: Provides a powerful way to match and manipulate strings.
+7. JSON support: Allows for easy data exchange between JavaScript and other languages.
+8. Modules: Enables code organization and reuse through modularization.
+9. Promises: Provides a way to handle asynchronous operations in a more manageable way.
+10. Async/await: Simplifies asynchronous programming by allowing for a more synchronous syntax.
+
 
 USE CASES:
 1.Authentication of forms
@@ -26,9 +66,13 @@ USE CASES:
 4.Synchronous and asynchronous (await)
 5.ES6
 
-IMPLEMENTATION:
-1.Inline JS-First priority,least preference-used in tag
-2.Internal JS-second priority-used in same page using script tag
-3.External JS-Least priority,First preference-used for multiple pages as need to write in a separate page and link using script tag
 
-*/ 
+IMPLEMENTATION:
+1. Inline JavaScript: First priority, least preference - used within HTML tags.
+2. Internal JavaScript: Second priority - used within the same HTML page using the <script> tag.
+3. External JavaScript: Least priority, first preference - used for multiple pages by linking a separate JavaScript file using the <script> tag.
+
+
+
+
+
