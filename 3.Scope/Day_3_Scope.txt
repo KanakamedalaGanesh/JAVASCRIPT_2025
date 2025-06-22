@@ -1,0 +1,100 @@
+Scope: Scope refers to the visibility or accessibility of variables, functions, and objects in some particular part of your code during runtime. In JavaScript, scope determines where variables can be accessed and modified.
+// There are two main types of scope in JavaScript:
+// 1. Global Scope: Variables declared outside of any function or block are in the global scope. They can be accessed from anywhere in the code.
+// 2. Local Scope: Variables declared within a function or block are in the local scope. They can only be accessed within that function or block.
+//// There are also two types of local scope:
+// 1. Function Scope: Variables declared with `var` inside a function are function-scoped. They can be accessed anywhere within that function.
+// 2. Block Scope: Variables declared with `let` or `const` inside a block (e.g., within curly braces `{}`) are block-scoped. They can only be accessed within that block.
+//// Example of Global Scope:
+var globalVar = "I am a global
+variable";
+console.log(globalVar); // Output: "I am a global variable"
+function globalFunction() {
+    console.log(globalVar); // Output: "I am a global variable"
+}   
+globalFunction(); // Call the function to see the output
+
+
+//// Example of Local Scope:
+function localScopeExample() {
+    var localVar = "I am a local variable";
+    console.log(localVar); // Output: "I am a local variable"
+}
+localScopeExample(); // Call the function to see the output
+// console.log(localVar); // Error: localVar is not defined (local variable cannot be accessed outside the function)
+
+
+//// Example of Function Scope:
+function functionScopeExample() {
+    var functionScopedVar = "I am function scoped";
+    if (true) {
+        var innerVar = "I am also function scoped"; // This is still accessible outside the block
+    }
+    console.log(functionScopedVar); // Output: "I am function scoped"
+    console.log(innerVar); // Output: "I am also function scoped"
+}
+functionScopeExample(); // Call the function to see the output
+// console.log(functionScopedVar); // Error: functionScopedVar is not defined (function scoped variable cannot be accessed outside the function)
+
+
+
+//// Example of Block Scope:
+function blockScopeExample() {
+    let blockScopedVar = "I am block scoped";
+    if (true) {
+        let innerBlockVar = "I am also block scoped"; // This is only accessible within this block
+        console.log(blockScopedVar); // Output: "I am block scoped"
+        console.log(innerBlockVar); // Output: "I am also block scoped"
+    }
+    // console.log(innerBlockVar); // Error: innerBlockVar is not defined (block scoped variable cannot be accessed outside the block)
+}
+blockScopeExample(); // Call the function to see the output
+// console.log(blockScopedVar); // Error: blockScopedVar is not defined (block scoped variable cannot be accessed outside the function)
+
+
+
+// Example of Variable Hoisting:
+console.log(hoistedVar); // Output: undefined (variable is hoisted)
+var hoistedVar = "I am hoisted"; // Variable declaration is hoisted, but assignment is not 
+console.log(hoistedVar); // Output: "I am hoisted" (after assignment) 
+// Note: Hoisting applies to `var` declarations. `let` and `const` do not hoist in the same way and will throw a ReferenceError if accessed before declaration.
+
+
+// Example of Hoisting with Functions:
+hoistedFunction(); // Output: "I am a hoisted function" (function declaration is hoisted)
+function hoistedFunction() {
+    console.log("I am a hoisted function");
+}
+// Note: Function expressions (e.g., `const myFunc = function() {}`) are not hoisted in the same way as function declarations and will throw a TypeError if called before declaration.
+
+
+
+// Example of Hoisting with Let and Const:
+// console.log(hoistedLet); // Error: Cannot access 'hoistedLet' before
+// declaration (let is not hoisted in the same way as var)
+let hoistedLet = "I am a let variable";
+// console.log(hoistedLet); // Output: "I am a let variable" (after declaration)
+// console.log(hoistedConst); // Error: Cannot access 'hoistedConst' before declaration (const is not hoisted in the same way as var)
+const hoistedConst = "I am a const variable";
+// console.log(hoistedConst); // Output: "I am a const variable" (after declaration)    
+// Note: `let` and `const` declarations are not hoisted in the same way as `var`. They are in a "temporal dead zone" until they are declared, meaning they cannot be accessed before their declaration line in the code.
+// This helps prevent errors and makes the code more predictable.
+// Summary:
+// - Scope determines the visibility and accessibility of variables, functions, and objects in JavaScript.
+// - Global scope allows access from anywhere in the code, while local scope restricts access to within a function or block.
+// - Function scope allows access to variables declared with `var` within the function, while block scope restricts access to variables declared with `let` or `const` within a specific block.
+// - Hoisting allows variable and function declarations to be moved to the top of their containing scope, but the behavior differs between `var`, `let`, and `const`.
+// - Understanding scope and hoisting is crucial for writing clean, maintainable, and bug-free JavaScript code.
+// - Always declare variables with `let` or `const` to avoid issues with hoisting and scope confusion.
+// - Use descriptive variable names to improve code readability and maintainability.
+// - Be mindful of the scope in which you declare variables to avoid unintended side effects and bugs.
+// - Use block scope (`let` and `const`) whenever possible to limit variable visibility and prevent accidental reassignments.
+// - Avoid using `var` unless necessary, as it can lead to confusion due to its function scope and hoisting behavior.
+// - Always test your code thoroughly to ensure that variables are accessible where you expect them to be and that there are no unintended side effects due to scope or hoisting issues.
+// - Use comments to clarify the purpose and scope of variables, especially in complex codebases.
+// - Keep your code organized and modular to make it easier to understand and maintain, especially when dealing with multiple scopes and variable declarations.
+// - Practice good coding habits, such as using consistent naming conventions and keeping variable declarations close to their usage, to improve code clarity and reduce the likelihood of scope-related bugs.
+// - Remember that understanding scope and hoisting is fundamental to mastering JavaScript and writing effective code
+// - Continuously learn and practice JavaScript to deepen your understanding of scope, hoisting, and other core concepts.
+// - Use tools like linters and code formatters to help enforce best practices and catch potential scope-related issues early in the development process.
+// - Collaborate with other developers to share knowledge and improve your understanding of scope and hoisting in JavaScript.
