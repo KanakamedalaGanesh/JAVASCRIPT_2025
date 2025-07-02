@@ -1,0 +1,139 @@
+Operators: Operators are used to perform operations on variables and values. 
+In JavaScript, there are several types of operators, including arithmetic, comparison, logical, assignment, and more. Here are some common operators:
+// 1. Arithmetic Operators: Used to perform mathematical operations.
+// - Addition (`+`): Adds two numbers.
+// - Subtraction (`-`): Subtracts one number from another.
+// - Multiplication (`*`): Multiplies two numbers.
+// - Division (`/`): Divides one number by another.
+// - Modulus (`%`): Returns the remainder of a division operation.
+// - Exponentiation (`**`): Raises a number to the power of another number.
+let a = 10;
+let b = 5;
+let sum = a + b; // Addition
+let difference = a - b; // Subtraction
+let product = a * b; // Multiplication
+let quotient = a / b; // Division
+let remainder = a % b; // Modulus
+let power = a ** b; // Exponentiation
+console.log("Sum:", sum); // Output: Sum: 15
+console.log("Difference:", difference); // Output: Difference: 5    
+console.log("Product:", product); // Output: Product: 50
+console.log("Quotient:", quotient); // Output: Quotient: 2
+console.log("Remainder:", remainder); // Output: Remainder: 0
+console.log("Power:", power); // Output: Power: 100000
+//
+
+// 2. Comparison Operators: Used to compare two values and return a boolean result.
+// - Equal to (`==`): Checks if two values are equal (type coercion allowed ).
+// - Strict equal to (`===`): Checks if two values are equal (no type coercion).
+// - Not equal to (`!=`): Checks if two values are not equal (type coercion allowed).
+// - Strict not equal to (`!==`): Checks if two values are not equal (no type coercion).
+// - Greater than (`>`): Checks if the left value is greater than the right value.
+// - Less than (`<`): Checks if the left value is less than the right value.
+// - Greater than or equal to (`>=`): Checks if the left value is greater than or equal to the right value.
+// - Less than or equal to (`<=`): Checks if the left value is less than or equal to the right value.
+let x = 10;
+let y = "10";
+let isEqual = (x == y); // Equal to (type coercion allowed)
+let isStrictEqual = (x === y); // Strict equal to (no type coercion)
+let isNotEqual = (x != y); // Not equal to (type coercion allowed)
+let isStrictNotEqual = (x !== y); // Strict not equal to (no type coercion)
+let isGreaterThan = (x > y); // Greater than
+let isLessThan = (x < y); // Less than
+let isGreaterThanOrEqual = (x >= y); // Greater than or equal to
+let isLessThanOrEqual = (x <= y); // Less than or equal to  
+console.log("Is Equal:", isEqual); // Output: Is Equal: true
+console.log("Is Strict Equal:", isStrictEqual); // Output: Is Strict Equal: false   
+console.log("Is Not Equal:", isNotEqual); // Output: Is Not Equal: false
+console.log("Is Strict Not Equal:", isStrictNotEqual); // Output: Is Strict Not Equal: true
+console.log("Is Greater Than:", isGreaterThan); // Output: Is Greater Than: false
+console.log("Is Less Than:", isLessThan); // Output: Is Less Than: false
+console.log("Is Greater Than or Equal:", isGreaterThanOrEqual); // Output: Is Greater Than or Equal: true
+console.log("Is Less Than or Equal:", isLessThanOrEqual); // Output: Is Less Than or Equal: true
+
+
+// 3. Logical Operators: Used to combine multiple conditions.
+// - AND (`&&`): Returns true if both conditions are true.
+// - OR (`||`): Returns true if at least one condition is true.
+// - NOT (`!`): Returns true if the condition is false.
+let condition1 = true;
+let condition2 = false;
+let andResult = condition1 && condition2; // AND
+let orResult = condition1 || condition2; // OR
+let notResult = !condition1; // NOT
+console.log("AND Result:", andResult); // Output: AND Result: false
+console.log("OR Result:", orResult); // Output: OR Result: true
+console.log("NOT Result:", notResult); // Output: NOT Result: false
+
+
+// 4. Assignment Operators: Used to assign values to variables.
+// - Assignment (`=`): Assigns a value to a variable.
+// - Addition assignment (`+=`): Adds a value to a variable and assigns the result.
+// - Subtraction assignment (`-=`): Subtracts a value from a variable and assigns the result.
+// - Multiplication assignment (`*=`): Multiplies a variable by a value and assigns the result.
+// - Division assignment (`/=`): Divides a variable by a value and assigns the result.
+// - Modulus assignment (`%=`): Takes the modulus of a variable by a value and assigns the result.
+let num = 10;
+num += 5; // Addition assignment
+num -= 3; // Subtraction assignment
+num *= 2; // Multiplication assignment
+num /= 4; // Division assignment
+num %= 3; // Modulus assignment
+console.log("Final Value of num:", num); // Output: Final Value of num: 1
+
+
+// 5. Unary Operators: Operate on a single operand.
+// - Increment (`++`): Increases the value of a variable by 1.
+// - Decrement (`--`): Decreases the value of a variable by 1.
+let count = 5;
+count++; // Increment
+count--; // Decrement
+console.log("Count after increment and decrement:", count); // Output: Count after increment and decrement: 5
+
+
+// 6. Ternary Operator: A shorthand for if-else statements.
+// - Syntax: `condition ? valueIfTrue : valueIfFalse`
+let age = 18;
+let canVote = (age >= 18) ? "You can vote." : "You cannot vote.";
+console.log(canVote); // Output: You can vote.
+// The ternary operator is a concise way to write simple if-else statements in a single line.
+// It evaluates the condition and returns one of the two values based on whether the condition is true or false.
+// Example of using the ternary operator:
+let isAdult = (age >= 18) ? "Adult" : "Minor";
+console.log("You are an:", isAdult); // Output: You are an: Adult
+
+// The ternary operator can also be nested for multiple conditions, but it's generally recommended to use if-else statements for complex conditions to maintain readability.
+// Example of nested ternary operator:
+let score = 85;
+let grade = (score >= 90) ? "A" :
+            (score >= 80) ? "B" :
+            (score >= 70) ? "C" :
+            (score >= 60) ? "D" : "F";
+console.log("Your grade is:", grade); // Output: Your grade is: B
+// In this example, the ternary operator checks the score and assigns a grade based on the specified ranges.
+// However, for more complex conditions or multiple branches, using if-else statements is often clearer and easier to understand.
+
+
+// 7. Bitwise Operators: Operate on binary representations of numbers.
+// - AND (`&`): Performs a bitwise AND operation.
+// - OR (`|`): Performs a bitwise OR operation.
+// - XOR (`^`): Performs a bitwise XOR operation.
+// - NOT (`~`): Performs a bitwise NOT operation.
+// - Left shift (`<<`): Shifts bits to the left.
+// - Right shift (`>>`): Shifts bits to the right.
+let bitA = 5; // Binary: 0101
+let bitB = 3; // Binary: 0011
+let bitwiseAnd = bitA & bitB; // Bitwise AND
+let bitwiseOr = bitA | bitB; // Bitwise OR
+let bitwiseXor = bitA ^ bitB; // Bitwise XOR
+let bitwiseNot = ~bitA; // Bitwise NOT
+let leftShift = bitA << 1; // Left shift
+let rightShift = bitA >> 1; // Right shift
+console.log("Bitwise AND:", bitwiseAnd); // Output: Bitwise AND: 1 (Binary: 0001)
+console.log("Bitwise OR:", bitwiseOr); // Output: Bitwise OR: 7 (Binary: 0111)
+console.log("Bitwise XOR:", bitwiseXor); // Output: Bitwise XOR: 6 (Binary: 0110)
+console.log("Bitwise NOT:", bitwiseNot); // Output: Bitwise NOT: -6 (Binary: 1010)
+console.log("Left Shift:", leftShift); // Output: Left Shift: 10 (Binary: 1010)
+console.log("Right Shift:", rightShift); // Output: Right Shift: 2 (Binary: 0010)
+
+
