@@ -1,0 +1,168 @@
+Conditional Statements in JavaScript
+// Conditional statements are used to perform different actions based on different conditions.
+// They allow you to execute code blocks conditionally, depending on whether a specified condition evaluates to true or false.
+// The main types of conditional statements in JavaScript are:
+// 1. if statement: Executes a block of code if a specified condition is true.
+// 2. if...else statement: Executes one block of code if a condition is true, and another block if it is false.
+// 3. else if statement: Allows you to check multiple conditions in sequence.
+// 4. switch statement: Evaluates an expression and executes code blocks based on matching cases.
+// 5. Ternary operator: A shorthand for if...else statements, allowing you to write conditional expressions in a single line.
+
+// Conditional statements are essential for controlling the flow of a program, enabling decision-making based on dynamic conditions.
+// They are used to execute different code paths based on the evaluation of conditions, allowing for more complex and interactive behavior in applications.
+// Conditional statements are fundamental in programming, allowing developers to control the flow of execution based on certain conditions.
+// They enable decision-making in code, allowing different actions to be taken based on the evaluation of conditions.
+// In JavaScript, conditional statements are used to execute different blocks of code based on whether a specified condition is true or false.
+// They are essential for implementing logic, making decisions, and controlling the flow of a program.
+// Conditional statements are a fundamental part of programming, allowing developers to control the flow of execution based on certain conditions.
+// They enable decision-making in code, allowing different actions to be taken based on the evaluation of conditions.
+
+
+// Examples of Conditional Statements:
+// 1. if statement:
+if (condition) {
+    // code to be executed if condition is true
+    console.log("Condition is true");
+}
+// Example:
+let age = 18;   
+if (age >= 18) {
+    console.log("You are an adult.");
+}
+// Output: You are an adult.
+
+
+// 2. if...else statement:
+if (condition) {
+// code to be executed if condition is true
+} else {
+// code to be executed if condition is false
+    console.log("Condition is false");
+}
+
+// Example:
+let score = 75;
+if (score >= 60) {
+    console.log("You passed the exam.");
+} else {
+    console.log("You failed the exam.");
+}
+// Output: You passed the exam.
+
+
+// 3. else if statement:
+if (condition1) {
+    // code to be executed if condition1 is true
+} else if (condition2) {
+    // code to be executed if condition2 is true
+} else {
+    // code to be executed if both conditions are false
+}
+
+// Example:
+let temperature = 30;   
+if (temperature > 30) {
+    console.log("It's a hot day.");
+} else if (temperature < 20) {
+    console.log("It's a cold day.");
+} else {
+    console.log("The weather is moderate.");
+}
+// Output: It's a hot day.
+
+
+// 4. switch statement:
+switch (expression) {
+    case value1:
+        // code to be executed if expression === value1
+        break;
+    case value2:
+        // code to be executed if expression === value2
+        break;
+    default:
+        // code to be executed if none of the cases match
+}
+
+// Example:
+let day = 3; // 1 for Monday, 2 for Tuesday, etc.
+switch (day) {
+case 1:
+    console.log("It's Monday.");
+    break;
+case 2:
+    console.log("It's Tuesday.");   
+    break;
+case 3:
+    console.log("It's Wednesday.");
+    break;  
+case 4:
+    console.log("It's Thursday.");
+    break;
+case 5:
+    console.log("It's Friday.");
+    break;
+case 6:
+    console.log("It's Saturday.");
+    break;
+case 7:
+    console.log("It's Sunday.");
+    break;
+default:
+    console.log("Invalid day.");
+}
+// Output: It's Wednesday.
+
+
+// 5. Ternary operator:
+let result = (condition) ? valueIfTrue : valueIfFalse;
+// Example:
+let isHot = true;
+let weatherMessage = isHot ? "It's a hot day." : "It's a cool day.";
+console.log(weatherMessage); // Output: It's a hot day. 
+
+// The ternary operator is a concise way to write simple if...else statements in a single line.
+// It evaluates the condition and returns one of the two values based on whether the condition is true or false.
+// Example of using the ternary operator:
+let age = 16;
+let message = (age >= 18) ? "You are an adult." : "You are a minor.";
+console.log(message); // Output: You are a minor.   
+
+// The ternary operator can also be nested for multiple conditions, but it's generally recommended to use if...else statements for complex conditions to maintain readability.
+// Example of nested ternary operator:
+let score = 85;
+let grade = (score >= 90) ? "A" :
+            (score >= 80) ? "B" :
+            (score >= 70) ? "C" :
+            (score >= 60) ? "D" : "F";
+console.log("Your grade is:", grade); // Output: Your grade is: B
+// In this example, the ternary operator checks the score and assigns a grade based on the specified ranges.
+// However, for more complex conditions or multiple branches, using if...else statements is often clearer and easier to understand.
+
+// Logical Operators in Conditional Statements
+// Logical operators are used to combine multiple conditions in conditional statements. The main logical operators in JavaScript are:
+// 1. AND (&&): Returns true if both conditions are true.   
+// 2. OR (||): Returns true if at least one of the conditions is true.
+// 3. NOT (!): Reverses the truthiness of a condition (true becomes false, and false becomes true).
+
+// Example of using logical operators in conditional statements:
+let isWeekend = true;
+let isHoliday = false;
+let canRelax = isWeekend || isHoliday; // true if either is true
+if (canRelax) {
+    console.log("You can relax today!"); // Output: You can relax today!
+} else {
+    console.log("You have to work today.");
+}
+// In this example, the `canRelax` variable is true if either `isWeekend` or `isHoliday` is true. The conditional statement checks this and prints the appropriate message.
+// Logical operators can also be used to combine multiple conditions in if statements:
+let age = 20;
+let hasPermission = true;   
+if (age >= 18 && hasPermission) {
+    console.log("You can enter the club."); // Output: You can enter the club.
+} else {
+    console.log("You cannot enter the club.");
+}
+// In this example, the condition checks if the person is at least 18 years old and has permission. If both conditions are true, the message indicates that they can enter the club.
+// Logical operators can also be used in switch statements to evaluate multiple cases, but it's more common to use them in if statements for clarity.
+
+
