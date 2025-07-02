@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <button onclick="function1()">Submit</button>
+    <button onclick="checkDiscount()">Check Discount</button>
+    <p id="output"></p>
+
+ <script>
+
+// Q1
+ /*
+function function1() {
+    let marks=prompt("Enter your marks");
+    let age=prompt("Enter your age");
+    message=" "
+if(marks>=90) {
+    message="Grade A <br>";
+    if(age<18) {
+         message+="Eligible for scholarship";
+    }
+}
+else if(marks>=70 && marks<=89) {
+      message="Grade B <br>";
+     if(age>21) {
+         message+="Try next time";
+     }
+}
+else {
+     message="Fail";
+}
+ document.getElementById("output").innerHTML=message;
+
+
+//Q2
+
+    
+//Q3
+function checkDiscount() {
+            let cartValue = (prompt("Enter your cart value:"));
+            let isPrime = prompt("Are you a Prime user? (yes/no):").toLowerCase();
+            let couponApplied = prompt("Is a coupon applied? (yes/no):").toLowerCase();
+            let message = "";
+
+            if(cartValue > 500) {
+                if(isPrime === "yes") {
+                    message = "20 percent discount";
+                } else {
+                    if (couponApplied === "yes") {
+                        message = "10 percent discount";
+                    } else {
+                        message = "5 percent discount";
+                    }
+                }
+            } else {
+                message = "No discount";
+            }
+             document.getElementById("output").innerHTML=message;
+        } 36
+
+    //Q4
+
+    let temp=prompt("Enter the temperature:");
+    let timeofday=prompt("Enter time:");
+    if(temp>35) {
+        if(timeofday=="afternoon"){
+            console.log("Extreme Heat Warning");
+        }
+        else{
+            console.log("Hot Weather");
+        }
+    }
+    else if (temp<=25 && temp>35) {
+        console.log("Normal");
+    }
+    else{
+        console.log("Cold");
+    }
+
+    //Q5
+    let destination=prompt("Enter your destination:");
+    let passenger=prompt("Enter the catergory of passenger: ");
+    if (destination=="metro city") {
+        if(passenger=="senior") {
+            console.log("40 percent off");
+        }
+        else {
+            console.log("Full fare");
+        }
+    }
+    else if(passenger=="student") {
+        console.log("50 percent off");
+        }
+    else {
+        console.log("Full fare");
+
+    }
+    
+    //Q6
+    let language=prompt("Enter language(En,Hi,Fr)")
+    let timeofday=prompt("Enter time(morning or evening)");
+    switch (language) {
+        case "English":
+        if(timeofday=="morning"){
+            console.log("Good morning");
+        }
+        else{
+            console.log("Good evening");
+        }
+        break;
+        case "Hindi":
+        if(timeofday=="morning"){
+            console.log("Subha");
+        }
+        else{
+            console.log("Sham");
+        }
+        break;
+        case "French":
+        if(timeofday=="morning"){
+            console.log("Bonjour");
+        }
+        else{
+            console.log("Bonsoir");
+            }
+         break;
+        }
+         
+        //Q7
+         let currency=prompt("Enter currency type(USD,EUR,INR)")
+         let amount=prompt("Enter amount");
+    switch (currency) {
+        case "USD":
+        if(amount>1000){
+            console.log("Add bonus amount");
+        }
+        else{
+            console.log("Use standard conversion");
+        }
+        break;
+        case "EUR":
+        if(amount>1000){
+            cconsole.log("Add bonus amount");
+        }
+        else{
+            console.log("Use standard conversion");
+        }
+        break;
+        case "INR":
+        if(amount>1000){
+            console.log("Add bonus amount");
+        }
+        else{
+            console.log("Use standard conversion");
+            }
+         break;
+        }
+
+        //Q8
+        let role=prompt("Enter your role:[admin,manager,employee]");
+        let department=prompt("Enter your department");
+        switch(role){
+            case "admin":
+             if(department==="HR"){
+                console.log("Edit access granted");
+             }
+             else{
+                console.log("View only Access");
+             }
+             break;
+
+             case "manager":
+             if(department==="HR"){
+                console.log("Edit access granted");
+             }
+             else{
+                console.log("View only Access");
+             }
+             break;
+
+             case "employee":
+             if(department==="HR"){
+                console.log("Edit access granted");
+             }
+             else{
+                console.log("View only Access");
+             }
+             break;
+
+             default:
+             console.log("Invalid role");
+        }
+
+       
+       //Q9
+       let weather=prompt("Enter weather type:[rainy,sunny,snow]");
+       let temperature=prompt("Enter temperature:");
+       switch(weather){
+        case "rainy":
+        if(temperature<15){
+            console.log("stay inside");
+        }
+        else{
+            console.log("Wear protection");
+        }
+        break;
+        case "sunny":
+        if(temperature<15){
+            console.log("stay inside");
+        }
+        else{
+            console.log("Wear protection");
+        }
+        break;
+        case "snow":
+        if(temperature<15){
+            console.log("stay inside");
+        }
+        else{
+            console.log("Wear protection");
+        }
+        break;
+       } 
+
+
+    //Q10
+    let plan=prompt("Enter your plan:[basic,standard,premium]");
+    let user=prompt("The user is:");
+    switch(plan){
+        case "basic":
+         if(user==="student"){
+            console.log("Extra student discount applied");
+         }
+         else{
+            console.log("standard pricing applied");
+         }
+         break;
+         case "standard":
+          if(user==="student"){
+            console.log("Extra student discount applied");
+         }
+         else{
+            console.log("standard pricing applied");
+         }
+         break;
+         case "premium":
+          if(user==="student"){
+            console.log("Extra student discount applied");
+         }
+         else{
+            console.log("standard pricing applied");
+         }
+         break;
+         }
+
+         
+         //Q11
+         let cart_value=prompt("Enter the cart value");
+         let status=prompt("The user has prime status[yes/no]");
+
+         if(cart_value>1000){
+            if(status==="yes"){
+                console.log("free delivery and 20 percent discount");
+            }
+            else{
+                console.log("free delivery and 10 percent discount");
+            }
+        }
+            if(cart_value>500 && cart_value<1000){
+
+            if(status==="yes"){
+                console.log("10 percent discount");
+            }
+            else{
+                console.log("delivery charge is 50 rupees");
+            }
+            if(cart_value<500){
+                console.log("No offers available");
+            }
+        }
+         
+         //Q12
+         let username=prompt("Enter your username");
+         let password=prompt("Enter your password");
+         let OTP=prompt("Enter the OTP");
+         if(username ==="admin" && password==="admin"){
+            if(OTP==="1234"){
+                console.log("Login successful");
+            }
+            else{
+                console.log("Invalid OTP");
+            }
+        }
+        else{
+            console.log("Invalid credentials");
+        }
+         
+        
+        //Q13
+        let theme=prompt("select theme:[light,dark,auto]");
+        if(theme==="light"){
+            console.log("light theme applied");
+        }
+        else if(theme==="dark"){
+            console.log("dark theme applied");
+            }
+        else if(theme==="auto"){
+            let hour = new Date().getHours();
+            if(hour<18){
+                console.log("apply light theme");
+            }
+            else{
+                console.log("apply dark theme");
+                }
+        }
+            
+        
+        //Q14
+        let age=prompt("Enter your age:");
+        let interest=prompt("area of interest[coding,design,marketing]");
+        if(age<18){
+            console.log("Try Beginner Bootcamp");
+        }
+        else{
+            switch(interest){
+                case "coding":
+                console.log("Full Stack Development course");
+                break;
+                case "design":
+                console.log("UI/UX Design course");
+                break;
+                case "marketing":
+                console.log("Digital Marketing course");
+                break;
+                default:
+                console.log("Invalid interest");
+
+            }
+        }
+
+
+        //Q15
+        let language=prompt("Enter your language[en,hi,fr,es]");
+        let region=prompt("Enter your region[India or other]");
+        switch(language){
+            case "en":
+            if(region=="India"){
+                console.log("Hello Namaste");
+            }
+            break;
+            case "hi":
+            if(region=="India"){
+                console.log("Namaste");
+            }
+            break;
+            case "fr":
+            if(region=="India"){
+                console.log("Bonjour");
+            }
+            break;
+            case "es":
+            if(region=="India"){
+                console.log("Hola");
+            }
+            break;
+            default:
+            console.log("Invalid language");
+            break;
+        }
+           
+        //Q16
+        let product=prompt("Enter product type[fragile,express,standard]");
+        let city=prompt("Enter city type[metro or non-metro]");
+        switch(product){
+            case "fragile":
+            if(city=="metro"){
+                console.log("Delivered in 2 days");
+            }
+            else{
+                console.log("Delivered in 4 days");
+            }
+            break;
+            case "express":
+            if(city=="metro"){
+                console.log("Delivered in 1 day");
+                }
+            else{
+                console.log("Delivered in 2 days");
+                }
+            break;
+            case "standard":
+            if(city=="metro"){
+                console.log("Delivered in 3 days");
+                }
+            else{
+                console.log("Delivered in 5 days");
+                }
+        }
+             
+        //Q17
+             let total=prompt("Enter total bill amount");
+             let people=prompt("Enter number of people");
+             let promocode=prompt("Enter promo code[FLAT50 or PERCENT10]");
+             if(promocode=="FLAT50"){
+                let discount=total-50
+                let perperson=discount/people;
+                console.log(discount);
+                console.log(perperson);
+             }
+             else if(promocode=="PERCENT10"){
+                let discount=total*0.1
+                let perperson=discount/people;
+                console.log(discount);
+                console.log(perperson);
+                }
+             else{
+                console.log("Invalid promo code");
+                }
+            
+        //Q18
+            let amount=prompt("Enter amount:");
+            let currency=prompt("Enter currency type:[INR,USD,EUR]");
+            let promocode=prompt("Enter promocode");
+            switch(currency){
+                case "INR":
+                if(promocode=="FLAT100"){
+                 let finalamount=amount-100;
+                 console.log(finalamount);
+                 }
+                 else if(promocode=="PERCENT10"){
+                    let finalamount=amount*0.1;
+                    console.log(finalamount);
+                 }
+                 else{
+                    console.log("Invalid promo code");
+                    }
+                 break;
+                  case "USD":
+                  if(promocode=="FLAT100"){
+                 let finalamount=amount-10;
+                 console.log(finalamount);
+                 }
+                 else if(promocode=="PERCENT10"){
+                    let finalamount=amount*0.1;
+                    console.log(finalamount);
+                 }
+                 else{
+                    console.log("Invalid promo code");
+                    }
+                 break;
+                 case "EUR":
+                 if(promocode=="FLAT100"){
+                 let finalamount=amount-10;
+                 console.log(finalamount);
+                 }
+                 else if(promocode=="PERCENT10"){
+                    let finalamount=amount*0.1;
+                    console.log(finalamount);
+                 }
+                 else{
+                    console.log("Invalid promo code");
+                    }
+                 break;
+            }
+                 
+        //Q19
+        let marks=prompt("Enter your marks");
+        let section=prompt("Enter your section[A,B,C]");
+        if(marks>90){
+            if(section=="A"){
+                console.log("Outstanding in Section A");
+            }
+            else if(section=="B"){
+                console.log("Excellent in Section B");
+            }
+        }
+        else if(marks>70 && marks<89){
+            console.log("Good performance");
+        }
+        else if(marks<70){
+            console.log("Needs improvement");
+        }
+            */
+
+        //Q20
+        let age=prompt("Enter your age");
+        let gender=prompt("Enter gender[male or female]");
+        if(age<13){
+            if (gender=="male"){
+                console.log("Hey young Boy");
+            }
+            else if(gender=="female"){
+                console.log("Hey Little Girl");
+           }
+        }
+        else if(age>13 && age<19){
+             if (gender=="male"){
+                console.log("Hello Teen");
+            }
+            else if(gender=="female"){
+                console.log("Hello Teen");
+           }
+        }
+        else if(age>20){
+            if (gender=="male"){
+               console.log("Welcome Adult");
+            }
+            else if(gender=="female"){
+                console.log("Welcome Adult");
+           }
+        
+        }
+
+
+    </script>
+</body>
+</html>
