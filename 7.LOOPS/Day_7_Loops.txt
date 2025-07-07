@@ -1,0 +1,54 @@
+Loops: Loops are used to execute a block of code repeatedly until a specified condition is met. In JavaScript, there are several types of loops, including `for`, `while`, and `do...while`. 
+// Each loop has its own syntax and use cases, allowing developers to iterate over arrays, objects, or execute code a specific number of times.
+
+
+//// 1. `for` loop: The `for` loop is used when you know the number of iterations in advance. It consists of three parts: initialization, condition, and increment/decrement.
+// Syntax: `for (initialization; condition; increment/decrement) { code to be executed }`
+// Example:
+for (let i = 0; i < 5; i++) {
+    console.log("Iteration:", i); // Output: Iteration: 0, Iteration: 1, Iteration: 2, Iteration: 3, Iteration: 4
+}
+
+
+// 2. `while` loop: The `while` loop is used when you don't know the number of iterations in advance. It continues to execute as long as the specified condition is true.
+// Syntax: `while (condition) { code to be executed }`
+let j = 0;
+while (j < 5) {
+    console.log("Iteration:", j); // Output: Iteration: 0, Iteration: 1, Iteration: 2, Iteration: 3, Iteration: 4
+    j++;
+}
+
+
+// 3. `do...while` loop: The `do...while` loop is similar to the `while` loop, but it guarantees that the code block will be executed at least once before checking the condition.
+// Syntax: `do { code to be executed } while (condition);`
+let k = 0;
+do {
+    console.log("Iteration:", k); // Output: Iteration: 0, Iteration: 1, Iteration: 2, Iteration: 3, Iteration: 4
+    k++;
+} while (k < 5);
+
+
+// 4. `for...in` loop: The `for...in` loop is used to iterate over the properties of an object.
+// Syntax: `for (variable in object) { code to be executed }`       
+let obj = { a: 1, b: 2, c: 3 };
+for (let key in obj) {
+    console.log(key, ":", obj[key]); // Output: a : 1, b : 2, c : 3
+}
+
+
+// 5. `for...of` loop: The `for...of` loop is used to iterate over iterable objects like arrays, strings, and sets.
+// Syntax: `for (variable of iterable) { code to be executed }`
+let arr = [1, 2, 3, 4, 5];
+for (let value of arr) {
+    console.log("Value:", value); // Output: Value: 1, Value: 2, Value: 3, Value: 4, Value: 5
+}
+//
+
+
+// 6. `forEach` method: The `forEach` method is an array method that executes a provided function once for each array element.
+// Syntax: `array.forEach(function(currentValue, index, array) { code to be executed });`
+arr.forEach(function(value, index) {
+    console.log("Index:", index, "Value:", value); // Output: Index: 0 Value: 1, Index: 1 Value: 2, Index: 2 Value: 3, Index: 3 Value: 4, Index: 4 Value: 5
+});
+
+
