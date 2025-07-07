@@ -1,0 +1,73 @@
+Datatypes in javascript : 
+
+Primitives:
+1. Number : It is used to store numeric values. 
+2. String : It is used to store string values.
+3. Boolean : It is used to store boolean values.
+4. Null : It is used to store null values.
+5. Undefined : It is used to store undefined values.
+6. Object : It is used to store object values.
+7. Symbol : It is used to store symbol values.
+
+
+Non-Primitives:
+1. Array : It is used to store array values.
+2. Date : It is used to store date values.
+3. RegExp : It is used to store regular expression values.
+4. Function : It is used to store function values.
+5. Map : It is used to store map values.
+6. Set : It is used to store set values.
+7. WeakMap : It is used to store weak map values.
+8. WeakSet : It is used to store weak set values.
+
+
+Examples of datatypes in javascript :
+
+1. Number :
+let num = 10;
+console.log(num); // Output : 10
+
+2. String :
+let str = "Hello";
+console.log(str); // Output : "Hello"
+
+3. Boolean :
+let bool = true;
+console.log(bool); // Output : true
+
+4. Null :
+let nullVar = null;
+console.log(nullVar); // Output : null
+
+5. Undefined :
+let undefVar;
+console.log(undefVar); // Output : undefined
+
+6. Object :
+let obj = {name : "John", age : 30};
+console.log(obj); // Output : {name : "John", age : 30}
+
+7. Symbol :
+let sym = Symbol("Hello");
+console.log(sym); // Output : Symbol(Hello)
+
+8. Array :
+let arr = [1, 2, 3, 4, 5];
+console.log(arr); // Output : [1, 2, 3, 4, 5] 
+
+9. Date :
+let date = new Date();
+console.log(date); // Output : Date object
+
+10. RegExp :
+let regExp = /Hello/;
+console.log(regExp); // Output : /Hello/ 
+
+11. Function :
+let func = function(){
+console.log("Hello");
+};
+console.log(func); // Output : function() { [native code] }
+
+
+
