@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+   <script >
+    //1.Function with parameters 
+    function fun1(a,b){
+       document.write(add=a+b ,"<br>");
+    }fun1(3,4)
+
+
+
+    //2.Function without parameters
+    function fun2(){
+        document.write("Hello World!<br>");
+    }fun2()
+
+
+    //3.Function with default parameters : 
+    function fun3(name="Friend"){
+        document.write("Hi " +name+ "!<br>");
+    }fun3("Ganesh")
+    fun3()
+
+
+    //4.Function Expression :
+    let output= function fun4(){
+        document.write("This is function expression!<br>")
+    }
+    output()
+
+
+    
+    //5.Function with return :
+    function fun5(a,b){
+        return a*b
+    }
+    let mul = fun5(4,5);
+    document.write(mul,"<br>")
+
+
+
+    //6.Anonymous/Function Declaration : 
+    setTimeout(function(){
+        document.write("Executed after 2 Seconds!");
+    },2000);
+
+    
+    let result= function(){
+         document.write("This is anonymous function!<br>");
+    }
+    result()
+
+
+
+    //7.Immediately Invoked or self invoked Function Expression :
+    (function(){
+        document.write("IIFE<br>");
+    })()
+
+
+
+    //8.Callback function :
+    function fun6(){
+        document.write("Hello Ganesh!<br>");
+        fun6();
+    }function fun7(){
+        document.write("Good morning!<br>");
+    }
+
+
+
+    //9.Recursive function : 
+    function fun8(n){
+         if (n<=1) return 1;
+         return n*fun8(n-1);
+    }
+    fun8(5)
+
+
+
+
+
+   </script> 
+</body>
+</html>
