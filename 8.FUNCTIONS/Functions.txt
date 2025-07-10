@@ -1,0 +1,3 @@
+Functions in javascript : A function is a reusable block of code , which executes when it is called.
+Types of Functions in javascript:
+1. 
