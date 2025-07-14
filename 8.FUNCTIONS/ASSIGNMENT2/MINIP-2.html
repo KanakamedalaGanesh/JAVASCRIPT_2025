@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg=black text-green-400 flex items-center justify-center h-screen">
+    <div id="clock" class="text-6xl font-mono tracking-widest"></div>
+    <script>
+        
+            const getTime =function(){
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2,'0');
+            const minutes = String(now.getMinutes()).padStart(2,'0');
+            const seconds = String(now.getSeconds()).padStart(2,'0');
+            return `${hours}H : ${minutes}M: ${seconds}S`;
+        }
+             setInterval(function(){
+                document.getElementById("clock").textContent=getTime();
+             },1000);
+             
+    </script>
+</body>
+</html>
