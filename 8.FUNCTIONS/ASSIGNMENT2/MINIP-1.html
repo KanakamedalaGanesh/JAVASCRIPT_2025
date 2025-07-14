@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="container" class="bg-white p-8 rounded-2xl shadow w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">Discount Calculator</h2>
+    <input type="number" id="price" placeholder="Enter product price" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 "/><br><br>
+    <input type="number" id="tax" placeholder="Enter tax rate (%) [optional]" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 " /><br><br>
+    <button onclick="calculate()" class="w=full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-800 transition">Calculate Final Price</button>
+    <div id="result"></div>
+  </div>
+
+
+
+    <script>
+         function calculateFinalPrice(price, tax = 0.05) {
+      return price + (price*tax);
+    }
+    function calculate() {
+      const price = parseFloat(document.getElementById("price").value);
+      const taxInput = document.getElementById("tax").value;
+      const taxRate = taxInput ? parseFloat(taxInput) / 100 : undefined;
+
+      if (isNaN(price)) {
+        document.getElementById("result").innerHTML = "Please enter a valid price.";
+        return;
+      }
+
+      const final = calculateFinalPrice(price, taxRate);
+      document.getElementById("result").innerHTML =`
+        Final price after tax : ₹${final.toFixed(2)}`;
+
+       
+     }
+    </script>
+</body>
+</html>
