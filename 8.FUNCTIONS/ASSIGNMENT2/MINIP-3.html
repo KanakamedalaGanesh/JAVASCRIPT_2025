@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-teal-400 flex items-center justify-center h-screen">
+     <div id="offerCountdown" 
+       class="text-3xl font-semibold border-4 border-teal-500 px-8 py-6 rounded-2xl shadow-lg">
+    Loading countdown...
+  </div>
+
+
+    <script>
+       (function () {
+      const countdownElement = document.getElementById('offerCountdown');
+
+      // Set offer expiry to 3 days from now
+      const now = new Date();
+      const offerExpiry = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000);
+
+      function updateCountdown() {
+        const currentTime = new Date();
+        const diff = offerExpiry - currentTime;
+
+        if (diff <= 0) {
+          clearInterval(timer);
+          countdownElement.textContent = "🎉 Offer expired!";
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        countdownElement.textContent =
+          `${days}d ${hours}h ${minutes}m ${seconds}s left`;
+      }
+
+      updateCountdown();
+      const timer = setInterval(updateCountdown, 1000);
+    })();
+    </script>
+</body>
+</html>
