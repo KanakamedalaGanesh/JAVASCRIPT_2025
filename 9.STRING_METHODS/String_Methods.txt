@@ -1,0 +1,29 @@
+String Methods in JS : String Methods in JavaScript are used to perform various operations on strings. 
+These methods are used to manipulate strings, such as converting them to uppercase or lowercase, finding their length, and more. 
+Here are some of the most commonly used string methods in JavaScript:
+1. String.fromCharCode() : This method returns a string created from the specified sequence of Unicode code points .
+2. String.fromCodePoint() : This method returns a string created from the specified sequence of Unicode code points .
+3. String.prototype.anchor() : This method returns a new string with the specified text surrounded by the anchor element.
+4. String.prototype.big() : This method returns a new string with the specified text surrounded by the big element.
+5. String.prototype.blink() : This method returns a new string with the specified text surrounded by the blink element.
+6. String.prototype.bold() : This method returns a new string with the specified text surrounded by the bold element.
+7. String.prototype.charAt() : This method returns the character at the specified index in a string.
+8. String.prototype.charCodeAt() : This method returns the Unicode code point for the character at the specified index in a string.
+9. String.prototype.codePointAt() : This method returns the Unicode code point for the character at the specified index in a string.
+10. String.prototype.concat() : This method returns a new string that is the result of concatenating two or more strings.
+11. String.prototype.endsWith() : This method returns a boolean indicating whether a string ends with the characters of another string.
+12. String.prototype.fixed() : This method returns a new string with the specified text surrounded by the fixed element.
+13. String.prototype.fontcolor() : This method returns a new string with the specified text surrounded by the font element.
+14. String.prototype.fontstyle() : This method returns a new string with the specified text surrounded by the font element.
+15. String.prototype.indexOf() : This method returns the index within the string of the first occurrence of the specified value.
+16. String.prototype.innerHTML() : This method returns the HTML content of a string. 
+17. String.prototype.lastIndexOf() : This method returns the index of the last occurrence of the specified value in the string.
+18. String.prototype.link() : This method returns a new string with the specified text surrounded by the link element.
+19. String.prototype.localeCompare() : This method returns a number indicating whether the string comes before or after or is the same as the given string in sort order.
+20. String.prototype.match() : This method returns an array of matches, or null if no match is found.
+21. String.prototype.normalize() : This method returns the normalized form of a string.
+22. String.prototype.replace() : This method returns a new string with some or all matches of a pattern replaced by a replacement.
+23. String.prototype.search() : This method returns the index within the string of the first occurrence of the specified value, or -1 if not found.
+24. String.prototype.slice() : This method returns the characters in a string between two specified indices.
+25. String.prototype.small() : This method returns a new string with the specified text surrounded by the small element.
+26. String.prototype.split() : This method splits a string into an array of substrings, or an array of arrays if the separator is a regular expression.
