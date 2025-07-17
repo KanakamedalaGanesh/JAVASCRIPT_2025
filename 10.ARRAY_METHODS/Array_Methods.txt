@@ -1,0 +1,23 @@
+Array Methos in JavaScript : Array Methods in JavaScript are used to perform various operations on arrays. 
+These methods are used to add, remove, and manipulate elements in an array. 
+Here are some of the most commonly used array methods in JavaScript:
+1. push() : This method is used to add one or more elements to the end of an array.
+2. pop() : This method is used to remove the last element from an array.
+3. shift() : This method is used to remove the first element from an array.
+4. unshift() : This method is used to add one or more elements to the beginning of an array.
+5. splice() : This method is used to add or remove elements from an array at a specified position.
+6. sort() : This method is used to sort the elements of an array in ascending or descending order.
+7. reverse() : This method is used to reverse the order of the elements in an array.
+8. concat() : This method is used to merge two or more arrays into a single array.
+9. indexOf() : This method is used to find the index of the first occurrence of a specified element in an array.
+10. lastIndexOf() : This method is used to find the index of the last occurrence of a specified element in an array.
+11. includes() : This method is used to check if an array includes a specified element.
+12. join() : This method is used to join the elements of an array into a string.
+13. slice() : This method is used to extract a portion of an array.
+14. map() : This method is used to create a new array with the results of applying a provided function on every element in this array.
+15. filter() : This method is used to create a new array with all elements that pass the test implemented by the provided function.
+16. reduce() : This method is used to apply a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+17. every() : This method is used to test whether all elements in the array pass the test implemented by the provided function.
+18. some() : This method is used to test whether at least one element in the array passes the test implemented by the provided function.
+19. find() : This method is used to return the first element in the array that satisfies the provided testing function.
+20. findIndex() : This method is used to return the index of the first element in the array that satisfies the provided testing function.
