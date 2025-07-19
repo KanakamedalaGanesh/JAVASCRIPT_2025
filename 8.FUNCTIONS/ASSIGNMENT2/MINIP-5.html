@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Highlighter with Recursion</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body  class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-6">
+     
+    <div class="text-xl mb-4">Highlight Numbers from <span class="text-teal-400">1 to 10</span></div>
+
+    <div id="numberContainer" class="flex gap-4 text-2xl font-semibold">
+
+
+
+    <script>
+          const start = 1;
+    const end = 10;
+    const container = document.getElementById('numberContainer');
+
+    // Render numbers in the container
+    for (let i = start; i <= end; i++) {
+      const span = document.createElement('span');
+      span.textContent = i;
+      span.id = `num-${i}`;
+      span.className = "text-gray-500 transition-all duration-300";
+      container.appendChild(span);
+    }
+
+    // Recursive highlighter function
+    function highlightNumber(current) {
+      if (current > end) return; // Base case
+
+      // Reset all to gray
+      for (let i = start; i <= end; i++) {
+        document.getElementById(`num-${i}`).classList.remove("text-yellow-400");
+        document.getElementById(`num-${i}`).classList.add("text-gray-500");
+      }
+
+      // Highlight current number
+      const currentElement = document.getElementById(`num-${current}`);
+      currentElement.classList.remove("text-gray-500");
+      currentElement.classList.add("text-yellow-400");
+
+      // Recursive call after 1 second
+      setTimeout(() => highlightNumber(current + 1), 1000);
+    }
+
+    // Start recursion on load
+    highlightNumber(start);
+    </script>
+</body>
+</html>
