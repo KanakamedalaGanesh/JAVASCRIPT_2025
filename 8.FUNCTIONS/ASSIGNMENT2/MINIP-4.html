@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start/Stop Timer (Callback)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+
+     <div class="text-3xl mb-6 font-bold text-yellow-400" id="timerDisplay">0 seconds</div>
+
+  <div class="space-x-4">
+    <button id="startBtn" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl shadow-md">
+      Start
+    </button>
+    <button id="stopBtn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-xl shadow-md">
+      Stop
+    </button>
+  </div>
+
+
+
+    <script>
+         let seconds = 0;
+    let intervalId = null;
+
+    // Callback function to update DOM
+    function updateTimerDisplay(value) {
+      document.getElementById('timerDisplay').textContent = `${value} seconds`;
+    }
+
+    // Start Timer
+    document.getElementById('startBtn').addEventListener('click', () => {
+      if (intervalId === null) {
+        intervalId = setInterval(() => {
+          seconds++;
+          updateTimerDisplay(seconds); // Using callback
+        }, 1000);
+      }
+    });
+
+    // Stop Timer
+    document.getElementById('stopBtn').addEventListener('click', () => {
+      clearInterval(intervalId);
+      intervalId = null;
+    });
+    </script>
+</body>
+</html>
