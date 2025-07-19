@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage_Techniques</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 text-white flex items-center min-h-screen justify-center px-4">
+    <!-- Registration Form -->
+    <h2 class="text-3xl font-bold">Registration Form</h2>
+
+    <form action="#" method="post" class="bg-red p-10 rounded-md shadow-md ">
+        <label for="Username" class="text-xl font-bold">Username:</label>
+        <input type="text" title="Username" placeholder="Enter Username" id="RegUsername"   class="text-xl font-bold"  required > <br>
+        
+
+        <label for="email" class="text-xl font-bold">Email:</label>
+        <input type="email" title="Email" placeholder="Enter Email"  id="RegEmail" class="text-xl font-bold" required> <br>
+        
+        <label for="password" class="text-xl font-bold">Password:</label>
+        <input type="password" title="Password" placeholder="Enter Password"  id="RegPassword" class="text-xl font-bold" required> <br><br>
+        
+       <button onclick="Reg()" class="w-100 bg-blue-600 hover:bg-green-800 py-2 rounded-md text-white font-semobold" type="button">Register</button><br><br>
+        
+    </form>
+
+       <!-- Login Form -->
+        <h2 class="text-3xl font-bold">Login Form</h2>
+        <form action="#" method="post" class="bg-brown p-10 rounded-md shadow-md">
+          <label for="Username" class="text-xl font-bold">Username:</label>
+          <input type="text" title="Username" placeholder="Enter Username"  id="LogUsername" class="text-xl font-bold" required> <br>
+          <label for="Password" class="text-xl font-bold">Password: </label>
+          <input type="password" title="Password" placeholder="Enter Password"   id="LogPassword"  class="text-xl font-bold" required><br><br>
+          
+          <button onclick="Login()" class="w-100 bg-blue-600 hover:bg-green-800 py-2 rounded-md text-white font-semobold" type="button">Login</button><br><br>
+          
+        </form>
+
+       <center> <p id="Message" class="text-red-500 text-lg font-medium"></p></center>
+        
+    <script src="./Storage.js"></script>
+</body>
+</html>
