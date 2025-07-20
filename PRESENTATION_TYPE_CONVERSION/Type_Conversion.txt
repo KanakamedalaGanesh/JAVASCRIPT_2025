@@ -1,0 +1,52 @@
+Type_Conversion: Type_Conversion is the process of converting one data type into another. 
+This is often necessary when performing operations that require specific data types or when interfacing with systems that expect certain formats.
+// In JavaScript, type conversion can be explicit (using functions) or implicit (automatic by the engine).
+
+
+Types of Type Conversion in JavaScript:
+1. Explicit Type Conversion: This involves using functions like Number(), String(), Boolean(), etc. to convert a value from one type to another.
+2. Implicit Type Conversion: This occurs automatically when JavaScript converts a value to a different type during operations, such as adding a number to a string.
+
+
+Examples of Type Conversion:
+// 1. Explicit Type Conversion:
+let num = "123"; // String
+let convertedNum = Number(num); // Explicit conversion to Number
+console.log(convertedNum); // Output: 123 (Number)
+console.log(typeof convertedNum); // Output: "number"   
+
+
+let str = 456; // Number
+let convertedStr = String(str); // Explicit conversion to String
+console.log(convertedStr); // Output: "456" (String)
+console.log(typeof convertedStr); // Output: "string"
+
+
+let bool = 0; // Number
+let convertedBool = Boolean(bool); // Explicit conversion to Boolean
+console.log(convertedBool); // Output: false (Boolean)
+console.log(typeof convertedBool); // Output: "boolean"
+
+
+// 2. Implicit Type Conversion:
+let implicitNum = "5" + 10; // Implicit conversion of Number to String
+console.log(implicitNum); // Output: "510" (String)
+
+
+let implicitStr = "5" - 2; // Implicit conversion of String to Number
+console.log(implicitStr); // Output: 3 (Number)
+
+
+let implicitBool = "5" * true; // Implicit conversion of String to Number
+console.log(implicitBool); // Output: 5 (Number)
+
+
+let implicitConcat = "5" + true; // Implicit conversion of Boolean to String
+console.log(implicitConcat); // Output: "5true" (String)
+
+
+
+// In summary, type conversion in JavaScript is a powerful tool for working with different data types. 
+It can be explicit or implicit, and it's essential to understand how it works to write efficient and effective code. 
+
+
