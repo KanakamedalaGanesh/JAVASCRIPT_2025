@@ -1,3 +1,19 @@
 Functions in javascript : A function is a reusable block of code , which executes when it is called.
 Types of Functions in javascript:
-1. 
+1. Function Declaration: This is the most common way to define a function in javascript. It is defined with the keyword function followed by the function name and the parameters in the parentheses.
+2. Function Expression: This is a function that is defined as a value of a variable or an expression. It is defined with the keyword function followed by the function name and the parameters in the parentheses .
+3. Arrow Function: This is a concise way to define a function in javascript. It is defined with the keyword => followed by the function body.
+4. Anonymous Function: This is a function that is defined without a name. It is often used as a callback function.
+5. Immediately Invoked Function Expression (IIFE): This is a function that is defined and executed immediately where it is defined.
+6. Constructor Function: This is a function that is used to create objects. It is defined with the keyword function followed by the function name and the parameters in the parentheses.
+7. Method Function: This is a function that is defined inside an object. It is used to perform a specific action on the object.
+8. Generator Function: This is a function that is used to create a generator. It is defined with the keyword function* followed by the function name and the parameters in the parentheses.
+9. Async Function: This is a function that is used to perform asynchronous operations. It is defined with the keyword async followed by the function name and the parameters in the parentheses.
+10.Async/Await Function: This is a function that is used to perform asynchronous operations. It is defined with the keyword async/await followed by the function name and the parameters in the parentheses.
+11.callback Function: This is a function that is passed as an argument to another function. It is used to perform a specific action when the function is called.
+12.Higher-Order Function: This is a function that takes another function as an argument or returns a function as a result.
+13.Recursive Function: This is a function that calls itself during its execution.
+14.Default Function: This is a function that has a default value for its parameters.
+15.Function with return type: This is a function that has a return type specified for its return value.
+
+
