@@ -1,0 +1,77 @@
+Storage Techniques in Js : Storage in JavaScript is a way to store data locally on the client-side. 
+It is a key-value pair storage system that allows you to store data in the browser's memory. 
+There are several types of storage techniques in JavaScript, including: Local Storage, Session Storage, and IndexedDB.
+
+### Local Storage : 
+Local Storage is a type of storage that allows you to store data locally on the client-side. 
+It is a key-value pair storage system that allows you to store data in the browser's memory. 
+It is similar to cookies, but it is more secure and has a larger storage capacity. 
+It is also more efficient than cookies because it does not require a round trip to the server to store data .
+It is also more secure than cookies because it is not sent to the server with every request.
+It is also more efficient than cookies because it does not require a round trip to the server to store data .
+It is also more secure than cookies because it is not sent to the server with every request.
+
+
+
+### Session Storage :
+Session Storage is a type of storage that allows you to store data locally on the client-side.
+It is similar to Local Storage, but it is only available for the duration of the session.
+It is a key-value pair storage system that allows you to store data in the browser's memory.
+It is similar to cookies, but it is more secure and has a larger storage capacity.
+It is also more efficient than cookies because it does not require a round trip to the server to store data . 
+It is also cleared when the user closes the browser. 
+It is used to store data that is only needed for the duration of the session. 
+It is also used to store data that is sensitive and should not be stored on the server.
+It is also used to store data that is only needed for the duration of the session.
+It is also used to store data that is sensitive and should not be stored on the server.
+
+
+
+### IndexedDB :
+IndexedDB is a type of storage that allows you to store data locally on the client-side.
+It is a key-value pair storage system that allows you to store data in the browser's memory.
+It is similar to Local Storage, but it is more powerful and flexible.
+It is also more efficient than Local Storage because it allows you to store larger amounts of data.
+It is also more efficient than Local Storage because it allows you to store data in a more structured way .
+It is also used to store data that is sensitive and should not be stored on the server.
+It is also used to store data that is only needed for the duration of the session.
+It is also used to store data that is sensitive and should not be stored on the server.
+It is also used to store data that is only needed for the duration of the session.
+
+
+
+# Example Use Cases :
+Here are some example use cases for storage techniques in JavaScript:
+
+### Local Storage :
+*   Storing user preferences, such as font size and color scheme.
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+### Session Storage :
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+### IndexedDB :
+*   Storing large amounts of data, such as images and videos.
+*   Storing data that is sensitive and should not be stored on the server.
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+### Cookies :
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+*   Storing data that is only needed for the duration of the session.
+### Web Storage :
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+### Web Storage API :
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+### LocalForage :
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
+### PouchDB :
+*   Storing data that is only needed for the duration of the session.
+*   Storing data that is sensitive and should not be stored on the server.
