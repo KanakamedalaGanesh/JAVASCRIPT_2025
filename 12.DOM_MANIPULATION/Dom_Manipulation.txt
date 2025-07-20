@@ -1,0 +1,91 @@
+###DOM Manipulation : DOM stands for Document Object Model. It is a programming interface for HTML and XML documents. 
+It defines the logical structure of documents and the way a document is accessed and manipulated. 
+DOM is a W3C (World Wide Web Consortium) standard. DOM is used to manipulate the HTML elements in a web page . 
+DOM is used to add, remove, modify, and update the HTML elements in a web page . DOM is used to add event listeners to the HTML elements in a web page. 
+DOM is used to get and set the properties of the HTML elements in a web page. DOM is used to create and delete the HTML elements in a web page. 
+DOM is used to get and set the attributes of the HTML elements in a web page. DOM is used to get and set the styles of the HTML elements in a web page. 
+DOM is used to get and set the text content of the HTML elements in a web page. DOM is used to get and set the innerHTML of the HTML elements in a web page. 
+DOM is used to get and set the outerHTML of the HTML elements in a web page. DOM is used to get and set the children of the HTML elements in a web page . 
+DOM is used to get and set the parent of the HTML elements in a web page. DOM is used to get and set the next sibling of the HTML elements in a web page. 
+DOM is used to get and set the previous sibling of the HTML elements in a web page. DOM is used to get and set the first child of the HTML elements in a web page. 
+DOM is used to get and set the last child of the HTML elements in a web page. DOM is used to get and set the next element sibling of the HTML elements in a web page. 
+DOM is used to get and set the previous element sibling of the HTML elements in a web page. DOM is used to get and set the first element child of the HTML elements in a web page.
+
+
+# DOM Manipulation
+## Introduction
+DOM (Document Object Model) is a programming interface for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+
+## DOM Manipulation Methods
+### 1. `document.createElement()`: Creates a new element.
+### 2. `document.createTextNode()`: Creates a new text node.
+### 3. `document.appendChild()`: Adds a child element to the end of the parent element .
+### 4. `document.insertBefore()`: Inserts a child element before the specified element.
+### 5. `document.removeChild()`: Removes a child element from the parent element.
+### 6. `document.replaceChild()`: Replaces a child element with a new element.
+### 7. `document.write()`: Writes the specified text to the document.
+### 8. `document.writeln()`: Writes the specified text to the document, followed by a newline character.
+### 9. `document.getElementById()`: Retrieves an element by its ID.
+### 10. `document.getElementsByClassName()`: Retrieves all elements with the specified class name.
+### 11. `document.getElementsByTagName()`: Retrieves all elements with the specified tag name.
+### 12. `document.querySelector()`: Retrieves the first element that matches the specified selector.
+### 13. `document.querySelectorAll()`: Retrieves all elements that match the specified selector.
+### 14. `element.innerHTML`: Gets or sets the HTML content of an element.
+### 15. `element.outerHTML`: Gets or sets the HTML content of an element, including its child elements.
+### 16. `element.style`: Gets or sets the CSS styles of an element.
+### 17. `element.textContent`: Gets or sets the text content of an element.
+### 18. `element.setAttribute()`: Sets an attribute of an element.
+### 19. `element.removeAttribute()`: Removes an attribute of an element.
+### 20. `element.classList.add()`: Adds a class to an element.
+### 21. `element.classList.remove()`: Removes a class from an element.
+### 22. `element.classList.toggle()`: Toggles a class on an element.
+### 23. `element.classList.contains()`: Checks if an element has a specific class.
+### 24. `element.addEventListener()`: Adds an event listener to an element.
+### 25. `element.removeEventListener()`: Removes an event listener from an element.
+
+
+# DOM Manipulation Example
+1. Create a new paragraph element: `var paragraph = document.createElement("p");`
+2. Add text to the paragraph element: `paragraph.textContent = "Hello World!";`
+3. Append the paragraph element to the body of the document: `document.body.appendChild(paragraph); `
+4. Get the first element with the class "header": `var header = document.querySelector(".header ");`
+5. Set the text content of the header element: `header.textContent = "Welcome to our websit e";`
+6. Add an event listener to the header element: `header.addEventListener("click", function() { alert("Hello World!"); });`
+7. Remove the event listener from the header element: `header.removeEventListener("click", function() { alert("Hello World!"); });`
+8. Get the first element with the tag name "h1": `var h1 = document .querySelector("h1 ");`
+9. Set the innerHTML of the h1 element: `h1.innerHTML = "<strong>Hello World!</strong>";`
+10. Get the first element with the class "footer": `var footer = document.querySelector(".footer ");`
+11. Set the outerHTML of the footer element: `footer.outerHTML = "<footer>Hello World !</footer>";`
+12. Get the first element with the tag name "p": `var p = document.querySelector(" p ");`
+13. Set the style of the p element: `p.style.color = "red";`
+14. Get the first element with the class "header": `var header = document.querySelector(".header ");`
+15. Set the text content of the header element: `header.textContent = "Welcome to our website ";`
+
+
+# DOM Manipulation Best Practices
+1. Use `document.querySelector()` or `document.querySelectorAll()` to select elements instead of `document.getElementById ()` or `document.getElementsByClassName()`.
+2. Use `element.textContent` instead of `element.innerHTML` to set the text content of an element.
+3. Use `element.classList.add()`, `element.classList.remove()`, and `element.classList.toggle ()` to manage classes on an element.
+4. Use `element.addEventListener()` and `element.removeEventListener()` to add and remove event listeners from an element.
+5. Use `element.setAttribute()` and `element.removeAttribute()` to set and remove attributes on an element .
+6. Use `element.style` to set the CSS styles of an element.
+7. Use `element.outerHTML` to set the HTML content of an element, including its child elements.
+8. Use `element.innerHTML` to set the HTML content of an element, excluding its child elements .
+9. Use `element.textContent` to get the text content of an element.
+10. Use `element.classList.contains()` to check if an element has a specific class.
+11. Use `element.addEventListener()` to add an event listener to an element.
+12. Use `element.removeEventListener()` to remove an event listener from an element.
+13. Use `element.setAttribute()` to set an attribute on an element.
+14. Use `element.removeAttribute()` to remove an attribute from an element.
+15. Use `element.classList.add()`, `element.classList.remove()`, and `element.classList.toggle ()` to manage classes on an element.
+16. Use `element.addEventListener()` and `element.removeEventListener()` to add and remove event listeners from an element.
+17. Use `element.setAttribute()` and `element.removeAttribute()` to set and remove attributes on an element .
+18. Use `element.style` to set the CSS styles of an element.
+19. Use `element.outerHTML` to set the HTML content of an element, including its child elements.
+20. Use `element.innerHTML` to set the HTML content of an element, excluding its child elements .
+21. Use `element.textContent` to get the text content of an element.
+22. Use `element.classList.contains()` to check if an element has a specific class.
+23. Use `element.addEventListener()` to add an event listener to an element.
+24. Use `element.removeEventListener()` to remove an event listener from an element.
+25. Use `element.setAttribute()` to set an attribute on an element.
